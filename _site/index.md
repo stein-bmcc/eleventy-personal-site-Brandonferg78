@@ -7,7 +7,17 @@ tags:
   - welcome
   - info
 ---
-<h2 class="mainHeading">Main Content</h2>
-<section class="content">
-  <p>Add your own content. You can delete all of the content on this page after the front-matter.</p>
+
+ <section id="title">
+<h1>My Portifolio</h1>
+
 </section>
+
+  <section id="work">
+       <img src="/images/art.jpg"style="width: 100%">
+       <img src="Ferguson13.jpg"style="width: 100%">
+       <img src="teapots.jpg"style="width: 100%">
+</section>
+<footer>
+    <p>	<a href="contact.html" class="btn" >contacts</a> </p>
+ </footer> 
