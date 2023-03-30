@@ -19,6 +19,11 @@ tags:
 </header>
 <h1>My Portifolio</h1>
 
+<div>
+<h2>description</h2>
+<p>This is an overlook of all the work I have done using Figma and Css. </p>  
+</div>
+
 </section>
 
   <section id="work">
