@@ -7,7 +7,25 @@ tags:
   - welcome
   - info
 ---
-<h2 class="mainHeading">Main Content</h2>
-<section class="content">
-  <p>Add your own content. You can delete all of the content on this page after the front-matter.</p>
-</section>
+
+  <!-- Create three photo cards -->
+    <div class="card">
+      <img src="/images/app photo 1.png" alt="Photo 1">
+      <h2>Photo 1</h2>
+      <p>This is a description of photo 1.</p>
+    </div>
+
+    <div class="card">
+      <img src="/images/app photo 2.png" alt="Photo 2">
+      <h2>Photo 2</h2>
+      <p>This is a description of photo 2.</p>
+    </div>
+
+    <div class="card">
+      <img src="/images/app photo 3.png" alt="Photo 3">
+      <h2>Photo 3</h2>
+      <p>This is a description of photo 3.</p>
+    </div>
+<footer>
+    <p>	<a href="contact.html" class="btn" >contacts</a> </p>
+ </footer> 
