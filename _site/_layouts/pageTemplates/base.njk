@@ -25,9 +25,15 @@ siteTitle: Your Site Title Here
     <link rel="stylesheet" href="/css/styles.css">
     </head>
   <body>
-    <header class="site-header">
-      {% include "navigation.njk" %}
-    </header>
+      <header>
+      <h1>My Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+  </header>
   
   <main class="main page-content">{{ content | safe }}</main>
 
