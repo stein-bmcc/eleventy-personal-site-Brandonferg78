@@ -1,12 +1,11 @@
 ---
 title: about
 date: Created
-layout: base.njk
+layout: base
 tags: navItem
 
 ---
-  - about
+ 
 
 # About
 
-{{title}}

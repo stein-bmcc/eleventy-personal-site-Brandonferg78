@@ -25,15 +25,14 @@ siteTitle: Your Site Title Here
     <link rel="stylesheet" href="/css/styles.css">
     </head>
   <body>
-      <header>
-      <h1>My Portfolio</h1>
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-      </nav>
-  </header>
+      <header class="site-header">
+  <div class="site-title"><h1>Brandon Project</h1></div>
+  <nav class="site-nav">
+    <a href="/">Home</a>
+    <a href="/contact">contact</a>
+    <a href="/about">about</a>
+  </nav>
+</header>
   
   <main class="main page-content">{{ content | safe }}</main>
 
