@@ -1,1 +1,259 @@
-/* You can add your CUSTOM CSS HERE */
+
+
+
+/* They styles in the following are similar to the effect of a reset but have be separated out so that it is easier to add default styles.  These are suggested styles that the designer should change and add to set the typography 
+Much of this is modified from two original sources
+HTML 5 Doctor Reset: http://html5doctor.com/html-5-reset-stylesheet/
+This is in the public domain. It has been modified to remove things redundant with Normalize and separate out styles that may need to be styled separately.
+Normalize.css: git.io/normalize 
+The version modified is: normalize.css v3.0.1 | MIT License
+A few pieces of normalize.css that more directly affected typographic choices (such as font-family) were moved here so normalize.css could be more or less left alone.
+*/
+
+/* ==================================================================== 
+    RESPONSIVE PREPARATION 
+   ==================================================================== 
+   Use these "as is"
+*/
+
+/*The following 7 lines are from Paul Irish and apply a border-box model. 
+See this page for more info: http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  /* Basic Responsive Images and Video */
+  img,video{
+    width: auto; 
+    height: auto;
+    max-width: 100%; 
+  }
+  
+  
+  /* Embedded Video Styles
+      These can be used to help add embedded video content, like YouTube videos, to your page. 
+      These styles require you set up your HTML in a specific way. 
+      See this CodePen for an example of it in use: http://codepen.io/profstein/pen/mArLRj
+  */
+  
+  .videoWrapper {
+      position: relative;
+      padding-top: 25px;
+      height: 0;
+  }
+  
+  .videoWrapper.ratio-16-9{
+      padding-bottom: 56.25%; /* 16:9 aspect ratio video */
+  }
+  
+  .videoWrapper.ratio-4-3{
+      padding-bottom: 75%; /* 4:3 aspect ratio video */
+  }
+  
+  .videoWrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  }
+  
+  
+  /* ==========================================================================
+     Your CSS
+     You can change this comment and add in your own CSS below
+     ==========================================================================*/
+  * {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: helvetica;
+	}
+	
+	body {
+	margin: 0;
+	background: #f00;
+	}
+	
+	h1 {
+	margin-bottom: 20px;
+	}
+	
+	.container {
+	max-width: 700px;
+	margin: 0 auto;
+	}
+	
+	section{
+	padding:200px 0;
+	}
+	
+	#hero {
+	background: url(img/hero.jpg);
+	background-size: cover;
+	background-position: top center;
+	background-attachment: fixed;
+	height: 60vh;
+	}
+	
+	.overlay {
+	background: linear-gradient(rgba(30, 0, 0, 0), rgba(30, 0, 0, .65) 30%, rgba(30, 0, 0, 1) 90%);
+	height: 100%;
+	}
+	
+	.content {
+	background: rgba(0, 0, 0, .75);
+	padding: 260px 60px 60px;
+	border-radius: 0px 0px 20px 20px;
+	color: #fff;
+	max-width: 700px;
+	margin-left: 60px;
+	}
+	
+	#cta{
+	background: url(img/cta.jpg);
+	background-attachment: fixed;
+	}
+	
+	#cta .overlay{
+	background: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1));
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100%;
+	}
+	
+	#cta .content{
+	background: none;
+	padding: 200px 0px;
+	border-radius: 0px;
+	color: #fff;
+	max-width: 700px;
+	margin:0 auto;
+	}
+ 
+      body
+      {
+      Padding:0;
+      margin: 0;
+      background:#ffd200;
+         }
+
+      #title{
+        padding:250px 0px;
+        
+      }
+      
+      h1
+      {
+        font-size: 5em;
+        margin:0;
+        padding:0;
+        text-align: center;
+        font-family:arial;
+      }
+      
+    
+      
+    
+        .row img{
+          height:400px;
+        }
+        footer{
+          text-align:center;
+        }
+    
+        #work{
+          display:flex;
+        }
+    
+    
+        #work img{
+          max-width:300px;
+          
+          padding:20px;
+        }
+    
+    
+        
+        .btn{
+          
+          display:inline-block;
+          background:#0f0;
+          padding:20px;
+        }
+    
+       .cards{
+        display:grid;
+        grid-template-columns:1fr;
+        gap:20px;
+       }
+       @media (min-width: 600px){
+        /* css goes here */
+        .cards{
+           grid-template-columns:1fr 1fr;
+           
+           }
+      }
+      /*   end min-width 600 */
+      @media (min-width: 900px){
+        /* css goes here */
+        .cards{
+           grid-template-columns:1fr 1fr 1fr;
+           
+           }
+      }
+      body{
+        margin: 0; /* this allows nav to fill entire width */
+      }
+      .site-header{
+        display: flex;
+        align-content: space-between;
+        align-items: baseline; /* aligns bottom of text */
+        align-items: center; /* aligns on center line */
+        gap: 10px;
+        flex-wrap: wrap;
+         padding:10px;
+        background-color: green;
+       margin: 0;
+        
+      /*   Add this if you want the nav to stay at the top on scroll*/
+      /*   position: sticky;
+        top: 0; */
+      }
+      
+      .site-title, .site-nav{ 
+        white-space: nowrap;
+      /*   outline: 1px blue solid; */
+      }
+      .site-title h1{
+        font-size: 20px;
+      }
+      .site-title{
+        flex-grow:1;
+      /*   aligns (pushes) the nav to the right */
+      }
+      .site-title h1{
+         margin: 0;
+      /*   padding: 0; */
+      }
+      
+      .site-nav a{
+        padding-left: 15px;
+      }
+      
+      @media (max-width: 400px){
+        .site-title, .site-nav{
+          text-align: center;
+        }
+        .site-nav{
+      /*     align-self: center; */
+          flex-grow: 1;
+        }
+        .site-nav a{
+          padding: 0 10px;
+        }
+      }
+      
