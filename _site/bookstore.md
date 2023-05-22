@@ -14,7 +14,8 @@ tags:
     <div class="card">
       <img src="/images/app photo 1.png" alt="Photo 1">
       <h2>Photo 1</h2>
-      <p>this is an Book store for college kids, this is page one.</p>
+      <p>This is an Book store project that was made for collge student to get free access to Book, 
+        It was made using Figma design to make the wireframe. </p>
     </div>
       <div class="card">
       <img src="/images/app photo 2.png" alt="Photo 2">

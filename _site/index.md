@@ -15,7 +15,7 @@ tags:
   
     <div class="card">
       <a href="/bookstore"><img src="/images/app photo 1.png" alt="Photo 1"></a>
-      <h2>Bookstore</h2>
+      <h2>Bookstore project</h2>
       <p></p>
       <p><a href="/bookstore">view project</a></p>
 </div>
